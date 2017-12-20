@@ -1,0 +1,1 @@
+<div class="leftCaseP"> <a href="[field:arcurl/]" title="[field:title/]"><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"/></a> </div>

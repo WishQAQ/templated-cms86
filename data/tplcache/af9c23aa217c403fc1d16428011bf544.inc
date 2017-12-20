@@ -1,0 +1,1 @@
+<a href="[field:typelink /]" title="[field:typename/]" class="caseMore">查看更多>></a>

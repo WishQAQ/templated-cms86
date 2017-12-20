@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="author" content="order by adminbuy.cn" />
+<link href="/skin/images/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/skin/images/jquery-1.8.0.min.js"></script>
+<script language="javascript" src="/skin/images/slide.js"></script>
+<script type="text/javascript" src="/skin/images/jquery.superslide.2.1.1.js" /></script>
+<script type="text/javascript" src="/skin/images/public.js"></script>
+<script type="text/javascript" src="/skin/images/sdmenu.js"></script>
+<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/index.php">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/index.php";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<script>
+$(function(){
+		var daohang = $('#daohang').find("li");
+		var cons = $("#cons").children("div");
+		daohang.bind("mouseover",function(){
+			daohang.removeClass("speciLi");
+			var ind = $(this).index();
+			cons.hide();
+			cons.eq(ind).show();
+			$(this).addClass("speciLi");
+		})
+	});
+</script>
+</head>
+
+<body>
+{dede:include filename="head.htm"/}
+<div class="baneBox">
+  <div class="full_banner">
+    <div class="bd">
+      <ul>
+        {dede:arclist row=3 typeid=26}
+        <li style="background:url([field:litpic/]) no-repeat center 0"></li>
+        {/dede:arclist}
+      </ul>
+    </div>
+    <div class="hd">
+      <ul>
+      </ul>
+    </div>
+  </div>
+  <div class="redBl">
+    <div class="redBCon">
+      <div class="leftRedBC">
+        <div class="LredBox">
+          <dl>
+            <dd>一站式节能、环保系统解决方案专业服务商</dd>
+            <dt>开发、生产、施工、销售、售后全方位服务</dt>
+          </dl>
+          <div> <a href="#"><img src="/skin/images/xl.jpg" alt="" title=""></a> <a href="#"><img src="/skin/images/tx.jpg" alt="" title=""></a> </div>
+        </div>
+      </div>
+      <div class="rightRedBC">
+        <div class="RredBox">
+          <p>热门关键词： {dede:hotwords num='6'/} </p>
+          <div class="search">
+            <form action="/plus/search.php" method="post">
+              <input type="hidden" name="kwtype" value="0" />
+              <input type="text" value="请输入关键词..." name="q" onclick="this.value=''">
+              <input type="image" src="/skin/images/searBtn.jpg" value="submit" style="float:right;width:34px;height:30px;margin-left:0px;padding:0px;">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="coper">
+  <div class="coperN"></div>
+  <div class="coperB">
+    <div class="mr_frbox"> <img class="mr_frBtnL prev"  src="/skin/images/left.jpg" width="43" height="49" />
+      <div class="mr_frUl">
+        <ul>
+          {dede:arclist typeid=25}
+          <li><a href="[field:arcurl/]" title="[field:title/]"><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"/></a></li>
+          {/dede:arclist}
+        </ul>
+      </div>
+      <img class="mr_frBtnR next"  src="/skin/images/right.jpg" width="43" height="49" /> </div>
+    <script language="javascript">
+                $(".mr_frUl ul li img").hover(function(){$(this).css("border-color","#A0C0EB");},function(){$(this).css("border-color","#d8d8d8")});
+                jQuery(".mr_frbox").slide({titCell:"",mainCell:".mr_frUl ul",autoPage:true,effect:"leftLoop",autoPlay:true,vis:3});
+                </script> 
+  </div>
+</div>
+<div class="proPart">
+  <div class="proBox">
+    <div class="leftPro">
+      <div class="proTitle"></div>
+      <div class="proCon">
+        <dl>
+          <dd>{dede:type typeid=12}<a href="[field:typelink /]" title="[field:typename/]">[field:typename/]</a>{/dede:type}</dd>
+          {dede:channel type=son typeid=12}
+          <dt><a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a></dt>
+          {/dede:channel}
+        </dl>
+        <dl>
+          <dd>{dede:type typeid=13}<a href="[field:typelink /]" title="[field:typename/]">[field:typename/]</a>{/dede:type}</dd>
+          {dede:channel type=son typeid=13}
+          <dt><a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a></dt>
+          {/dede:channel}
+        </dl>
+        <dl>
+          <dd>{dede:type typeid=14}<a href="[field:typelink /]" title="[field:typename/]">[field:typename/]</a>{/dede:type}</dd>
+        </dl>
+      </div>
+      <div class="proPhone">
+        <p>全国咨询热线：</p>
+        <h1>029-6688-9888</h1>
+      </div>
+    </div>
+    <ul class="rightPro">
+      {dede:arclist row=6 typeid=2}
+      <li>
+        <dl>
+          <dd>[field:title/]</dd>
+          <dt><a href="[field:arcurl/]" title="[field:title/]">查看详情>></a></dt>
+        </dl>
+        <a href="[field:arcurl/]" title="[field:title/]"><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"/></a> </li>
+      {/dede:arclist}
+    </ul>
+  </div>
+</div>
+<div class="PKCon">
+  <div class="pktitle"></div>
+  <div class="PKImg"></div>
+  <div class="PKstance">
+    <div class="PKstanBox">
+      <p class="leftPKS"> 采用针形管强化传热元件，增加换热面积6-8倍;<br>
+        提高换热系数2倍，从而使传热效率提高14倍;<br>
+        自清灰、体积小、重量轻、性价比高…… </p>
+      <h3>结构</h3>
+      <p class="rightPKS p01">采用螺旋翅片管，积灰比较严重，换热效果不理想。</p>
+    </div>
+  </div>
+  <div class="PKstance">
+    <div class="PKstanBox">
+      <p class="leftPKS"> 耐磨损、密封好、占地面积小；<br>
+        锅炉本体重量仅是常规锅炉的1/2-2/3倍；<br>
+        锅炉体积仅是常规锅炉的1/2倍 </p>
+      <h3>性能</h3>
+      <p class="rightPKS p01">锅炉本体重量大，占地面积大，安装使用不够方便。</p>
+    </div>
+  </div>
+  <div class="PKstance">
+    <div class="PKstanBox">
+      <p class="leftPKS"> 采用自动控制，减少操作人员数量；<br>
+        模块化设计，维修更换方便，降低劳动强度；<br>
+        节约人力物力成本，提高经济效益 </p>
+      <h3>使用</h3>
+      <p class="rightPKS p02">出现问题需要把锅炉全部拆开进行更换，更换时间大约为两个月时间，现场安装费事费力周期长，基建工程量大。</p>
+    </div>
+  </div>
+</div>
+<div class="casePart">
+  <div class="caseCon">
+    <div class="caseTitle"></div>
+    <div class="caseCONTE"> {dede:arclist  typeid=3 row="6"}
+      <div class="leftCaseP"> <a href="[field:arcurl/]" title="[field:title/]"><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"/></a> </div>
+      {/dede:arclist} </div>
+    {dede:type typeid=3}<a href="[field:typelink /]" title="[field:typename/]" class="caseMore">查看更多>></a>{/dede:type} </div>
+</div>
+<div class="Advan">
+  <div class="AdvTitle"></div>
+  <div class="AdC01">
+    <ul>
+      <li>在接到您设备已安装完毕，条件具备可进行调试通知后，我们保证<span>24小时内</span>到达现场并及时完成调试；</li>
+      <li>在接到您维修要求后，我们保证上门服务，随叫随到，及时修复</li>
+      <li>我们为您提供的全套设备中凡属锅炉本体质量问题，<span>12个月内</span>免费为您维修，辅机配件<span>一年内免费</span>为您维修或者更换(易损件除外)。</li>
+    </ul>
+  </div>
+  <div class="AdC02">
+    <ul>
+      <li>当您的设备安装完毕后，为您<span>建立“使用维修档案”</span>；</li>
+      <li>完成设备调试工作后，与您共同<span>签署“现场调试报告”</span>并向您的设备操作使用人员传授设备正确使用方法及使用注意事项。请您对我们的服务提出宝贵意见。</li>
+      <li>完成维修服务工作后与您共同签署”技术服务卡”请您对我们的服务提出宝贵意见。</li>
+      <li>锅炉正常运行后，<span>3日内技术指导人员不离现场</span>，随时解答司炉人员提出的各种问题。</li>
+      <li>设备使用期间，我们定期与您联系，询问使用情况，有无困难，我们能否给您帮助。</li>
+    </ul>
+  </div>
+  <div class="AdC03">
+    <ul>
+      <li>包修期内免费维修(非质量原因造成的损坏除外)。</li>
+      <li>包修期内，因用户造成的损坏，只收成本费。</li>
+      <li>包修期外，<span>终身维修服务</span>。</li>
+    </ul>
+  </div>
+</div>
+<div class="honerLine">
+  <div class="honerCon">
+    <div class="honerName"></div>
+    <div id="demo">
+      <div id="indemo">
+        <div id="demo1">
+          <div class="honerBox"> {dede:arclist typeid=6} <a href="[field:arcurl/]" title="[field:title/]"><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"/></a> {/dede:arclist} </div>
+        </div>
+        <div id="demo2"></div>
+      </div>
+    </div>
+    <script>
+						var speed=10;
+						var tab=document.getElementById("demo");
+						var tab1=document.getElementById("demo1");
+						var tab2=document.getElementById("demo2");
+						tab2.innerHTML=tab1.innerHTML;
+						function Marquee(){
+						if(tab2.offsetWidth-tab.scrollLeft<=0)
+						tab.scrollLeft-=tab1.offsetWidth
+						else{
+						tab.scrollLeft++;
+						}
+						}
+						var MyMar=setInterval(Marquee,speed);
+						tab.onmouseover=function() {clearInterval(MyMar)};
+						tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+					</script> 
+  </div>
+</div>
+<div class="mainCon">
+  <div class="cusTitle"></div>
+  <div class="cusCion">
+    <div class="leftCus"> {dede:arclist row=4 typeid=11}
+      <div class="CusList"> <a href="[field:arcurl/]" title="[field:title/]"><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"/></a>
+        <div class="CusText">
+          <h3><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h3>
+          <p>[field:description function="cn_substr(@me,240)"/]......</p>
+          <a href="[field:arcurl/]" title="[field:title/]" class="cusMore">[查看更多+]</a> </div>
+      </div>
+      {/dede:arclist} </div>
+  </div>
+  <div class="newLine">
+    <div class="leftNew">
+      <div class="leftNT">
+        <ul id="daohang">
+          <li class="speciLi">行业新闻</li>
+          <li>公司新闻</li>
+        </ul>
+        {dede:type typeid=5}<a href="[field:typelink/]" title="[field:typename/]">MORE>></a>{/dede:type} </div>
+      <div class="leftNB" id="cons">
+        <div class="newsCTE" style="display:block;">
+          <div class="Upnews"> {dede:arclist row=1 typeid=8 flag=h} <img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"/>
+            <div class="RNText">
+              <p>[field:description function="cn_substr(@me,440)"/]......</p>
+              <a href="[field:arcurl/]" title="[field:title/]">查看更多>></a> </div>
+            {/dede:arclist} </div>
+          <div class="DownNews"> {dede:arclist row=5 typeid=8 noflag=h  titlelen='50'}
+            <div class="newsList"> <a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a>
+              <p>[field:pubdate function="MyDate('Y-m-d',@me)"/]</p>
+            </div>
+            {/dede:arclist} </div>
+        </div>
+        <div class="newsCTE">
+          <div class="Upnews"> {dede:arclist row=1 typeid=9 flag=h} <img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"/>
+            <div class="RNText">
+              <p>[field:description function="cn_substr(@me,440)"/]......</p>
+              <a href="[field:arcurl/]" title="[field:title/]">查看更多>></a> </div>
+            {/dede:arclist} </div>
+          <div class="DownNews"> {dede:arclist row=5 typeid=9 noflag=h titlelen='50'}
+            <div class="newsList">  <a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a>
+              <p>[field:pubdate function="MyDate('Y-m-d',@me)"/]</p>
+            </div>
+            {/dede:arclist} </div>
+        </div>
+      </div>
+    </div>
+    <div class="rightNew">
+      <div class="rightNT">
+        <h3>行业知识</h3>
+        {dede:type typeid=10}<a href="[field:typelink/]" title="[field:typename/]">MORE>></a>{/dede:type} </div>
+      <div class="newsBotm">
+        <table align=center border="0" cellpadding="0" style="border-collapse: collapse">
+          <tr>
+            <td><div id=design style="OVERFLOW: hidden; HEIGHT:405px;">
+                <div id=design1 style="OVERFLOW: hidden">
+                  <TABLE cellSpacing=0 cellPadding=0 width=440 align=center border=0>
+                    {dede:arclist typeid=10}
+                    <tr>
+                      <td align=left width="440" height="28" class="ask"><a class=b2 href="[field:arcurl/]" title="[field:title/]" class="tag_title_link">[field:title/]</a></td>
+                    </tr>
+                    <tr>
+                      <td align=left width="440" height="28" class="answer"><a class=b2 href="[field:arcurl/]" title="[field:title/]" class="tag_title_link">[field:description function="cn_substr(@me,80)"/]......</a></td>
+                    </tr>
+                    {/dede:arclist}
+                  </table>
+                </div>
+                <div id=design2> </div>
+              </div>
+              <script>
+var speed=65
+design2.innerHTML=design1.innerHTML
+function Marquee2()
+{
+if(design2.offsetTop-design.scrollTop<=0)
+design.scrollTop-=design1.offsetHeight
+else
+{
+design.scrollTop++
+}
+}
+var MyMar2=setInterval(Marquee2,speed)
+design.onmouseover=function()
+{
+clearInterval(MyMar2)
+}
+design.onmouseout=function()
+{
+MyMar2=setInterval(Marquee2,speed)
+}
+</script> 
+              <script language="javascript">
+<!--
+function showchargemenu(m1)
+{
+document.getElementById("test").innerHTML = m1.innerHTML; 
+}
+//-->
+</script></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="links">
+    <div class="linkName"></div>
+    <div class="linkCon">
+      <p> {dede:flink titlelen='20' row='10' type='text'}[field:link /]{/dede:flink} </p>
+    </div>
+  </div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>
